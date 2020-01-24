@@ -12,5 +12,5 @@ void main()
    {
     printf("not eligible to the marriage\n");
    }
- }
+printf(t)
 }
