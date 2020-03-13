@@ -1,0 +1,88 @@
+<html>
+<head>
+<style>
+div{
+background:rgb(76,175,80);
+padding:10px;
+}
+div.first {
+  background: rgba(76, 175, 80, 0.1);
+}
+
+div.second {
+  background: rgba(76, 175, 80, 0.3);
+}
+
+div.third {
+  background: rgba(76, 175, 80, 0.6);
+}
+img.padding {
+  padding-left: 12cm;
+}
+img {
+  opacity: 0.9;
+}
+div.background {
+  background: url(/home/cse9/20171cse0573/wall.jpeg)repeat;
+  border:10px solid black;
+  border-style: solid;
+  border-color: black; 
+}
+
+div.transperant {
+  margin:30px;
+  background-color:white;
+  border: 5px solid black;
+  opacity: 0.5;
+}
+
+div.transperant p {
+  margin:5%;
+  font-weight:bold;
+   color: green;
+}
+
+}
+h4::before {
+  content: url(/home/cse9/20171cse0573/smiley.jpeg);
+}
+h4::after {
+  content: url(/home/cse9/20171cse0573/smiley.jpeg)
+;}
+::selection {
+  color: red;
+  background: yellow;
+}
+p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+p::first-line {
+  color: #0000ff;
+  font-variant: small-caps;
+}
+</style>
+</head>
+<body>
+<hr>
+<h4>The::before pseudo-element inserts content.</h4>
+<hr>
+<p>You can combine the ::first-letter and ::first-line pseudo-elements to add a special effect to the first letter and the first line of a text!</p>
+<img class="padding" src="/home/cse9/20171cse0573/un1.jpg" alt="Logo" width="170" height="100">
+<hr>
+<p>With RGBA color values:</p>
+<div class="first"><p>10% opacity</p></div>
+<div class="second"><p>30% opacity</p></div>
+<div class="third"><p>60% opacity</p></div>
+<div><p>default</p></div>
+<hr>
+
+<div class="background">
+  <div class="transperant">
+    <p><center><strong>This is some text that is placed in the transparent box.</strong></center></p>
+  </div>
+</div>
+
+</body>
+</html>
